@@ -5,8 +5,6 @@ import { MdDarkMode, MdLightMode } from "react-icons/md";
 export function ToggleTheme() {
   const { colorMode, toggleColorMode } = useColorMode();
 
-  console.log(colorMode, toggleColorMode);
-
   return (
     <Button onClick={toggleColorMode}>
       {colorMode === "light" ? (

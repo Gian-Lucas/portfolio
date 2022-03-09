@@ -1,3 +1,9 @@
+import { Flex, Heading } from "@chakra-ui/react";
+
 export function Home() {
-  return <h1>Portfólio</h1>;
+  return (
+    <Flex id="home">
+      <Heading>Portfólio</Heading>
+    </Flex>
+  );
 }
