@@ -37,8 +37,9 @@ export function Header() {
             <DrawerCloseButton />
 
             <DrawerBody>
-              <VStack>
+              <VStack spacing="4" mt="14">
                 <MenuLink href="#home" title="Home" mr="0" />
+                <MenuLink href="#tech" title="Tecnologias" />
                 <MenuLink href="#projects" title="Projetos" />
                 <MenuLink href="#contact" title="Contato" />
                 <ToggleTheme />
@@ -53,6 +54,7 @@ export function Header() {
   return (
     <Flex as="header" justifyContent="flex-end" alignItems="center" p="2">
       <MenuLink href="#home" title="Home" />
+      <MenuLink href="#tech" title="Tecnologias" />
       <MenuLink href="#projects" title="Projetos" />
       <MenuLink href="#contact" title="Contato" />
 

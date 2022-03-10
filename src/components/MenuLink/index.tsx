@@ -10,6 +10,7 @@ export function MenuLink({ href, title, ...rest }: MenuLinkProps) {
     <Link
       mr="7"
       href={href}
+      fontWeight="bold"
       _hover={{
         color: "blue.400",
         textDecoration: "none",
