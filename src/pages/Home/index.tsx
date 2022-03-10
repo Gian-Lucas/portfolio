@@ -1,14 +1,5 @@
-import {
-  Button,
-  Divider,
-  Flex,
-  Heading,
-  Image,
-  Text,
-  useColorMode,
-  VStack,
-} from "@chakra-ui/react";
-import { ProjectCard } from "../../components/ProjectCard";
+import { Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { ProjectCardList } from "../../components/ProjectCardList";
 
 export function Home() {
   // const { colorMode } = useColorMode();
@@ -36,10 +27,10 @@ export function Home() {
             w="fit-content"
             mt="10"
             mx={["auto", "auto", "0"]}
-            bg="red.400"
+            bg="blue.400"
             color="gray.50"
             _hover={{
-              bg: "red.500",
+              bg: "blue.500",
             }}
           >
             Download Resume
@@ -57,23 +48,7 @@ export function Home() {
         />
       </Flex>
 
-      <VStack
-        id="projects"
-        spacing="10"
-        mx="auto"
-        mt="20"
-        px={["30", "50", "50"]}
-        maxWidth="1080px"
-      >
-        <Heading textAlign={["center", "center", "start"]}>
-          Meus projetos
-        </Heading>
-        <ProjectCard />
-        <Divider />
-        <ProjectCard />
-        <Divider />
-        <ProjectCard />
-      </VStack>
+      <ProjectCardList />
     </>
   );
 }
