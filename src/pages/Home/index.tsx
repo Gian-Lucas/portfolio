@@ -17,7 +17,7 @@ export function Home() {
       >
         <Flex flexDir="column">
           <Heading size="2xl" textAlign={["center", "center", "start"]}>
-            Hi, I am John, Creative Technologist
+            Olá, Eu sou o Gian! Desenvolvedor Front-End Web
           </Heading>
           <Text mt={["3", "6", "10"]} textAlign={["center", "center", "start"]}>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet

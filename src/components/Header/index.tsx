@@ -52,7 +52,13 @@ export function Header() {
   }
 
   return (
-    <Flex as="header" justifyContent="flex-end" alignItems="center" p="2">
+    <Flex
+      id="header"
+      as="header"
+      justifyContent="flex-end"
+      alignItems="center"
+      p="2"
+    >
       <MenuLink href="#home" title="Home" />
       <MenuLink href="#tech" title="Tecnologias" />
       <MenuLink href="#projects" title="Projetos" />

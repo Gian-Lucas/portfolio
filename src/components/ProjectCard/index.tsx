@@ -2,15 +2,15 @@ import { Flex, Heading, Image, Stack, Tag, Text } from "@chakra-ui/react";
 
 export function ProjectCard() {
   return (
-    <Flex>
+    <Flex flexDir={["column", "column", "row"]}>
       <Image
-        mr="5"
+        mr={["0", "0", "5"]}
+        mb={["2", "4", "0"]}
         borderRadius="base"
-        boxSize={["150", "200"]}
-        src="https://avatars.githubusercontent.com/u/67169105?v=4"
+        src="https://i.ytimg.com/vi/nUGZvfx4PuU/mqdefault.jpg"
         alt="Gian Lucas"
       />
-      <Stack spacing="5">
+      <Stack spacing={["3", "4", "5"]}>
         <Heading>Título do projeto</Heading>
         <Tag variant="solid" bg="gray.700" w="fit-content">
           2022
