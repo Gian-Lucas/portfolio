@@ -1,4 +1,5 @@
 import { Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Footer } from "../../components/Footer";
 import { ProjectCardList } from "../../components/ProjectCardList";
 
 export function Home() {
@@ -49,6 +50,8 @@ export function Home() {
       </Flex>
 
       <ProjectCardList />
+
+      <Footer />
     </>
   );
 }
