@@ -65,7 +65,7 @@ export function Home() {
                 bg: "blue.500",
               }}
             >
-              <Icon fontSize="20" as={MdEmail} mr="1" mt="-1" />
+              <Icon fontSize="20" as={MdEmail} mr="1" />
               Entre em contato
             </Button>
           </Link>
