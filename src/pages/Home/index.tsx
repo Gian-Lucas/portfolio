@@ -21,6 +21,7 @@ import {
   SiSass,
   SiTypescript,
 } from "react-icons/si";
+import { ButtonToTop } from "../../components/ButtonToTop";
 
 import { Footer } from "../../components/Footer";
 import { ProjectCardList } from "../../components/ProjectCardList";
@@ -209,6 +210,7 @@ export function Home() {
       </Flex>
 
       <Footer />
+      <ButtonToTop />
     </>
   );
 }
