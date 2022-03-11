@@ -5,6 +5,7 @@ import {
   Heading,
   Icon,
   Image,
+  Link,
   SimpleGrid,
   Text,
   Tooltip,
@@ -21,6 +22,7 @@ import {
   SiSass,
   SiTypescript,
 } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 import { ButtonToTop } from "../../components/ButtonToTop";
 
 import { Footer } from "../../components/Footer";
@@ -47,18 +49,26 @@ export function Home() {
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
           </Text>
-          <Button
-            w="fit-content"
+
+          <Link
+            _hover={{ textDecoration: "none" }}
+            isExternal
+            href="mailto:lgian584@gmail.com"
             mt="10"
             mx={["auto", "auto", "0"]}
-            bg="blue.400"
-            color="gray.50"
-            _hover={{
-              bg: "blue.500",
-            }}
           >
-            Download Resume
-          </Button>
+            <Button
+              w="fit-content"
+              bg="blue.400"
+              color="gray.50"
+              _hover={{
+                bg: "blue.500",
+              }}
+            >
+              <Icon fontSize="20" as={MdEmail} mr="1" mt="-1" />
+              Entre em contato
+            </Button>
+          </Link>
         </Flex>
 
         <Image
