@@ -22,7 +22,6 @@ import {
   SiSass,
   SiTypescript,
 } from "react-icons/si";
-import { MdEmail } from "react-icons/md";
 import { ButtonToTop } from "../../components/ButtonToTop";
 
 import { Footer } from "../../components/Footer";
@@ -65,7 +64,6 @@ export function Home() {
                 bg: "blue.500",
               }}
             >
-              <Icon fontSize="20" as={MdEmail} mr="1" />
               Entre em contato
             </Button>
           </Link>
