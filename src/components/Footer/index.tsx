@@ -16,12 +16,33 @@ export function Footer() {
     <VStack mb="10" mt="20" id="contact">
       <HStack spacing="8">
         <Link href="https://github.com/gian-lucas" isExternal>
-          <Icon boxSize="10" as={AiFillGithub} />
+          <Icon
+            boxSize="10"
+            as={AiFillGithub}
+            transition="0.5s"
+            _hover={{
+              transform: "scale(1.4) rotate(360deg)",
+            }}
+          />
         </Link>
-        <Link href="https://linkedin.com/in/gian-lucas-66299618b" isExternal>
+        <Link
+          href="https://linkedin.com/in/gian-lucas-66299618b"
+          isExternal
+          transition="0.5s"
+          _hover={{
+            transform: "scale(1.4) rotate(360deg)",
+          }}
+        >
           <Icon boxSize="10" as={AiFillLinkedin} />
         </Link>
-        <Link href="https://instagram.com/gian_lcss" isExternal>
+        <Link
+          href="https://instagram.com/gian_lcss"
+          isExternal
+          transition="0.5s"
+          _hover={{
+            transform: "scale(1.4) rotate(360deg)",
+          }}
+        >
           <Icon boxSize="10" as={AiFillInstagram} />
         </Link>
       </HStack>

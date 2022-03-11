@@ -24,7 +24,13 @@ export function Header() {
 
   if (isMobile) {
     return (
-      <Flex as="header" justifyContent="flex-end" alignItems="center" p="2">
+      <Flex
+        id="header"
+        as="header"
+        justifyContent="flex-end"
+        alignItems="center"
+        p="2"
+      >
         <IconButton
           aria-label="Search database"
           icon={<FiMenu />}
