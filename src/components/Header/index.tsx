@@ -11,12 +11,13 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { FiMenu } from "react-icons/fi";
+import { useMenuHeader } from "../../contexts/MenuHeaderContext";
 
 import { MenuLink } from "../MenuLink";
 import { ToggleTheme } from "../ToogleTheme";
 
 export function Header() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useMenuHeader();
   const isMobile = useBreakpointValue({
     base: true,
     md: false,
@@ -37,7 +38,12 @@ export function Header() {
           onClick={onOpen}
         />
 
-        <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
+        <Drawer
+          isOpen={isOpen}
+          placement="right"
+          onClose={onClose}
+          returnFocusOnClose={false}
+        >
           <DrawerOverlay />
           <DrawerContent>
             <DrawerCloseButton />
