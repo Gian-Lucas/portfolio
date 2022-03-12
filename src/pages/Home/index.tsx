@@ -20,6 +20,7 @@ import {
   SiNextdotjs,
   SiReact,
   SiSass,
+  SiStyledcomponents,
   SiTypescript,
 } from "react-icons/si";
 import { ButtonToTop } from "../../components/ButtonToTop";
@@ -46,9 +47,11 @@ export function Home() {
             Olá, me chamo Gian! Desenvolvedor Front-End Web
           </Heading>
           <Text mt={["3", "6", "10"]} textAlign={["center", "center", "start"]}>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
+            Opa! Tudo bem? Meu nome é Gian Lucas, tenho 17 anos e sou um
+            Desenvolvedor Front-Ent Web. Atualmente estou focado em estudar a
+            stack ReactJS + NextJS + Chakra UI + styled-components. Fiz o curso
+            técnico em informática integrado ao ensino médio no IFPB e irei
+            ingressar em Ciência da Computação na UEPB.
           </Text>
 
           <Link
@@ -182,6 +185,18 @@ export function Home() {
             <Box>
               <Icon
                 as={SiSass}
+                boxSize={["20", "24"]}
+                transition="0.3s"
+                _hover={{
+                  transform: "scale(1.2)",
+                }}
+              />
+            </Box>
+          </Tooltip>
+          <Tooltip label="styled-components" fontSize="lg">
+            <Box>
+              <Icon
+                as={SiStyledcomponents}
                 boxSize={["20", "24"]}
                 transition="0.3s"
                 _hover={{

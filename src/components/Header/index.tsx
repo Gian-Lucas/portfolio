@@ -64,16 +64,17 @@ export function Header() {
 
   return (
     <Flex
+      fontSize="17"
       id="header"
       as="header"
       justifyContent="flex-end"
       alignItems="center"
       p="2"
     >
-      <MenuLink href="#home" title="Home" />
+      <MenuLink href="#home" title="Sobre mim" />
       <MenuLink href="#tech" title="Tecnologias" />
       <MenuLink href="#projects" title="Projetos" />
-      <MenuLink href="#contact" title="Contato" />
+      {/* <MenuLink href="#contact" title="Contato" /> */}
 
       <ToggleTheme />
     </Flex>

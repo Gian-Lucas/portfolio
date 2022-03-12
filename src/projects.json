@@ -7,6 +7,18 @@
       "info": "A Pokedex armazena as informações de todos os Pokémon que existem no mundo."
     },
     {
+      "url": "https://raw.githubusercontent.com/Gian-Lucas/portfolio/master/src/images/spacetraveling.png",
+      "title": "Spacetraveling",
+      "githubUrl": "https://github.com/Gian-Lucas/desafio1-chapterIII-reactjs-criando-um-projeto-do-zero",
+      "info": "Um blog com conteúdo focado em tecnologia e desenvolvimento."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Gian-Lucas/portfolio/master/src/images/dtmoney.png",
+      "title": "DtMoney",
+      "githubUrl": "https://github.com/Gian-Lucas/dt-money",
+      "info": "Uma aplicação construída para controlar e organizar finanças."
+    },
+    {
       "url": "https://raw.githubusercontent.com/Gian-Lucas/portfolio/master/src/images/chatonline.png",
       "title": "Chat Online",
       "githubUrl": "https://github.com/Gian-Lucas/chatonline",

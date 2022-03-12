@@ -9,6 +9,7 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { MdMail } from "react-icons/md";
 
 export function Footer() {
   const { colorMode } = useColorMode();
@@ -30,25 +31,35 @@ export function Footer() {
             }}
           />
         </Link>
-        <Link
-          href="https://linkedin.com/in/gian-lucas-66299618b"
-          isExternal
-          transition="0.5s"
-          _hover={{
-            transform: "scale(1.4) rotate(360deg)",
-          }}
-        >
-          <Icon boxSize="10" as={AiFillLinkedin} />
+        <Link href="https://linkedin.com/in/gian-lucas-66299618b" isExternal>
+          <Icon
+            transition="0.5s"
+            _hover={{
+              transform: "scale(1.4) rotate(360deg)",
+            }}
+            boxSize="10"
+            as={AiFillLinkedin}
+          />
         </Link>
-        <Link
-          href="https://instagram.com/gian_lcss"
-          isExternal
-          transition="0.5s"
-          _hover={{
-            transform: "scale(1.4) rotate(360deg)",
-          }}
-        >
-          <Icon boxSize="10" as={AiFillInstagram} />
+        <Link href="mailto:lgian584@gmail.com" isExternal>
+          <Icon
+            transition="0.5s"
+            _hover={{
+              transform: "scale(1.4) rotate(360deg)",
+            }}
+            boxSize="10"
+            as={MdMail}
+          />
+        </Link>
+        <Link href="https://instagram.com/gian_lcss" isExternal>
+          <Icon
+            transition="0.5s"
+            _hover={{
+              transform: "scale(1.4) rotate(360deg)",
+            }}
+            boxSize="10"
+            as={AiFillInstagram}
+          />
         </Link>
       </HStack>
 
