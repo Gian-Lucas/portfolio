@@ -11,4 +11,11 @@ export const theme = extendTheme({
     heading: "Heebo",
     body: "Heebo",
   },
+  styles: {
+    global: {
+      html: {
+        scrollBehavior: "smooth",
+      },
+    },
+  },
 });
