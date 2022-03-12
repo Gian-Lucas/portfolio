@@ -1,5 +1,6 @@
 import {
   Button,
+  Flex,
   Heading,
   Link,
   Stack,
@@ -23,7 +24,8 @@ interface ProjectCardListProps {
 export function ProjectCardList({ projects }: ProjectCardListProps) {
   const { colorMode } = useColorMode();
   return (
-    <Stack
+    <Flex
+      flexDir="column"
       id="projects"
       mx="auto"
       mt="20"
@@ -49,12 +51,12 @@ export function ProjectCardList({ projects }: ProjectCardListProps) {
       <Link
         _hover={{ textDecoration: "none" }}
         isExternal
-        textAlign="center"
         href="https://github.com/Gian-Lucas?tab=repositories"
+        w="fit-content"
+        mx="auto"
+        mt="10"
       >
         <Button
-          mt="10"
-          w="fit-content"
           bg="blue.400"
           color="gray.50"
           _hover={{
@@ -64,6 +66,6 @@ export function ProjectCardList({ projects }: ProjectCardListProps) {
           Ver todos os projetos
         </Button>
       </Link>
-    </Stack>
+    </Flex>
   );
 }

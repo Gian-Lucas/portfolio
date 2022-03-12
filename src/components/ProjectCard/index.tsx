@@ -23,9 +23,14 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
   const { url, title, githubUrl, info } = project;
   return (
-    <Flex flexDir={["column", "column", "row"]} justify="center" align="start">
+    <Flex flexDir={["column", "column", "row"]}>
       <Box mr={["0", "0", "5"]} mb={["2", "4", "0"]}>
-        <Image borderRadius="base" src={url} alt={title} />
+        <Image
+          maxWidth={["auto", "auto", "500"]}
+          borderRadius="base"
+          src={url}
+          alt={title}
+        />
       </Box>
       <Stack spacing={["3", "4", "5"]}>
         <Heading>{title}</Heading>

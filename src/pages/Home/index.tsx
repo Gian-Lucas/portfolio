@@ -46,7 +46,11 @@ export function Home() {
           <Heading size="2xl" textAlign={["center", "center", "start"]}>
             Olá, me chamo Gian! Desenvolvedor Front-End Web
           </Heading>
-          <Text mt={["3", "6", "10"]} textAlign={["center", "center", "start"]}>
+          <Text
+            fontSize={["md", "lg", "lg", "xl"]}
+            mt={["3", "6", "10"]}
+            textAlign={["center", "center", "start"]}
+          >
             Opa! Tudo bem? Meu nome é Gian Lucas, tenho 17 anos e sou um
             Desenvolvedor Front-Ent Web. Atualmente estou focado em estudar a
             stack ReactJS + NextJS + Chakra UI + styled-components. Fiz o curso
@@ -60,9 +64,9 @@ export function Home() {
             href="mailto:lgian584@gmail.com"
             mt="10"
             mx={["auto", "auto", "0"]}
+            w="fit-content"
           >
             <Button
-              w="fit-content"
               bg="blue.400"
               color="gray.50"
               _hover={{
