@@ -79,7 +79,7 @@ export function Home() {
           mb={["35", "50", "0"]}
           ml={["auto", "auto", "70"]}
           borderRadius="full"
-          boxSize={["200", "250"]}
+          boxSize={["250", "300"]}
           src="https://avatars.githubusercontent.com/u/67169105?v=4"
           alt="Gian Lucas"
         />
