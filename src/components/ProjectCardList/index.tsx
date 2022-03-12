@@ -50,7 +50,7 @@ export function ProjectCardList({ projects }: ProjectCardListProps) {
         _hover={{ textDecoration: "none" }}
         isExternal
         textAlign="center"
-        href="https://github.com/Gian-Lucas/repositories"
+        href="https://github.com/Gian-Lucas?tab=repositories"
       >
         <Button
           mt="10"
