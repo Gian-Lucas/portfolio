@@ -29,7 +29,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </Box>
       <Stack spacing={["3", "4", "5"]}>
         <Heading>{title}</Heading>
-        <Link _hover={{ textDecoration: "none" }} href={githubUrl} isExternal>
+        <Link
+          w="fit-content"
+          _hover={{ textDecoration: "none" }}
+          href={githubUrl}
+          isExternal
+        >
           <Tag
             transition="0.3s"
             variant="solid"
