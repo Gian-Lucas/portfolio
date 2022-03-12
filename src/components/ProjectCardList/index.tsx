@@ -1,16 +1,29 @@
 import {
-  Box,
+  Button,
   Heading,
+  Link,
+  Stack,
   StackDivider,
   useColorMode,
   VStack,
 } from "@chakra-ui/react";
 import { ProjectCard } from "../ProjectCard";
 
-export function ProjectCardList() {
+interface Project {
+  url: string;
+  title: string;
+  githubUrl: string;
+  info: string;
+}
+
+interface ProjectCardListProps {
+  projects: Project[];
+}
+
+export function ProjectCardList({ projects }: ProjectCardListProps) {
   const { colorMode } = useColorMode();
   return (
-    <Box
+    <Stack
       id="projects"
       mx="auto"
       mt="20"
@@ -28,10 +41,29 @@ export function ProjectCardList() {
           />
         }
       >
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {projects.map((project) => (
+          <ProjectCard key={project.title} project={project} />
+        ))}
       </VStack>
-    </Box>
+
+      <Link
+        _hover={{ textDecoration: "none" }}
+        isExternal
+        textAlign="center"
+        href="https://github.com/Gian-Lucas/repositories"
+      >
+        <Button
+          mt="10"
+          w="fit-content"
+          bg="blue.400"
+          color="gray.50"
+          _hover={{
+            bg: "blue.500",
+          }}
+        >
+          Ver todos os projetos
+        </Button>
+      </Link>
+    </Stack>
   );
 }

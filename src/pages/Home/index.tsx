@@ -27,6 +27,8 @@ import { ButtonToTop } from "../../components/ButtonToTop";
 import { Footer } from "../../components/Footer";
 import { ProjectCardList } from "../../components/ProjectCardList";
 
+import { projects } from "../../projects.json";
+
 export function Home() {
   return (
     <>
@@ -79,8 +81,6 @@ export function Home() {
           alt="Gian Lucas"
         />
       </Flex>
-
-      <ProjectCardList />
 
       <Flex
         id="tech"
@@ -216,6 +216,8 @@ export function Home() {
           </Tooltip>
         </SimpleGrid>
       </Flex>
+
+      <ProjectCardList projects={projects} />
 
       <Footer />
       <ButtonToTop />

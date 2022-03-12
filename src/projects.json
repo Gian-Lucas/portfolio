@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "url": "https://raw.githubusercontent.com/Gian-Lucas/portfolio/master/src/images/pokedex.png",
+      "title": "Pokedex",
+      "githubUrl": "https://github.com/Gian-Lucas/pokedex-react",
+      "info": "A Pokedex armazena as informações de todos os Pokémon que existem no mundo."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Gian-Lucas/portfolio/master/src/images/chatonline.png",
+      "title": "Chat Online",
+      "githubUrl": "https://github.com/Gian-Lucas/chatonline",
+      "info": "Um chat online criado com WebSockets utilizando a biblioteca socket.io."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Gian-Lucas/portfolio/master/src/images/unfollowers.png",
+      "title": "UnFollowers",
+      "githubUrl": "https://github.com/Gian-Lucas/unfollowers",
+      "info": "UnFollowers é uma aplicação que mostra quais usuários não seguem você de volta no GitHub."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Gian-Lucas/portfolio/master/src/images/todo-list.png",
+      "title": "ToDo List",
+      "githubUrl": "https://github.com/Gian-Lucas/desafio-01-todo-list",
+      "info": "Uma lista de tarefas é algo que ajuda muito nos afazeres diários, deixando possível listar e organizar quais tarefas fazer."
+    }
+  ]
+}
