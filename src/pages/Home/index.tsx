@@ -9,6 +9,7 @@ import {
   SimpleGrid,
   Text,
   Tooltip,
+  useDisclosure,
 } from "@chakra-ui/react";
 import {
   SiChakraui,
@@ -27,6 +28,7 @@ import { ButtonToTop } from "../../components/ButtonToTop";
 
 import { Footer } from "../../components/Footer";
 import { ProjectCardList } from "../../components/ProjectCardList";
+import { TechIcon } from "../../components/TechIcon";
 
 import { projects } from "../../projects.json";
 
@@ -101,138 +103,17 @@ export function Home() {
           Tecnologias
         </Heading>
         <SimpleGrid mx="auto" columns={[2, 3, 4, 5]} spacingX={8} spacingY={12}>
-          <Tooltip label="HTML5" fontSize="lg">
-            <Box>
-              <Icon
-                as={SiHtml5}
-                boxSize={["20", "24"]}
-                transition="0.3s"
-                _hover={{
-                  transform: "scale(1.2)",
-                }}
-              />
-            </Box>
-          </Tooltip>
-          <Tooltip label="CSS3" fontSize="lg">
-            <Box>
-              <Icon
-                as={SiCss3}
-                boxSize={["20", "24"]}
-                transition="0.3s"
-                _hover={{
-                  transform: "scale(1.2)",
-                }}
-              />
-            </Box>
-          </Tooltip>
-          <Tooltip label="JavaScript" fontSize="lg">
-            <Box>
-              <Icon
-                as={SiJavascript}
-                boxSize={["20", "24"]}
-                transition="0.3s"
-                _hover={{
-                  transform: "scale(1.2)",
-                }}
-              />
-            </Box>
-          </Tooltip>
-          <Tooltip label="TypeScript" fontSize="lg">
-            <Box>
-              <Icon
-                as={SiTypescript}
-                boxSize={["20", "24"]}
-                transition="0.3s"
-                _hover={{
-                  transform: "scale(1.2)",
-                }}
-              />
-            </Box>
-          </Tooltip>
-          <Tooltip label="ReactJS" fontSize="lg">
-            <Box>
-              <Icon
-                as={SiReact}
-                boxSize={["20", "24"]}
-                transition="0.3s"
-                _hover={{
-                  transform: "scale(1.2)",
-                }}
-              />
-            </Box>
-          </Tooltip>
-          <Tooltip label="NextJS" fontSize="lg">
-            <Box>
-              <Icon
-                as={SiNextdotjs}
-                boxSize={["20", "24"]}
-                transition="0.3s"
-                _hover={{
-                  transform: "scale(1.2)",
-                }}
-              />
-            </Box>
-          </Tooltip>
-          <Tooltip label="Chakra UI" fontSize="lg">
-            <Box>
-              <Icon
-                as={SiChakraui}
-                boxSize={["20", "24"]}
-                transition="0.3s"
-                _hover={{
-                  transform: "scale(1.2)",
-                }}
-              />
-            </Box>
-          </Tooltip>
-          <Tooltip label="Sass" fontSize="lg">
-            <Box>
-              <Icon
-                as={SiSass}
-                boxSize={["20", "24"]}
-                transition="0.3s"
-                _hover={{
-                  transform: "scale(1.2)",
-                }}
-              />
-            </Box>
-          </Tooltip>
-          <Tooltip label="styled-components" fontSize="lg">
-            <Box>
-              <Icon
-                as={SiStyledcomponents}
-                boxSize={["20", "24"]}
-                transition="0.3s"
-                _hover={{
-                  transform: "scale(1.2)",
-                }}
-              />
-            </Box>
-          </Tooltip>
-          <Tooltip label="Git" fontSize="lg">
-            <Box>
-              <Icon
-                as={SiGit}
-                boxSize={["20", "24"]}
-                transition="0.3s"
-                _hover={{
-                  transform: "scale(1.2)",
-                }}
-              />
-            </Box>
-          </Tooltip>
-          <Tooltip label="GitHub" fontSize="lg">
-            <Box>
-              <Icon
-                as={SiGithub}
-                boxSize={["20", "24"]}
-                transition="0.3s"
-                _hover={{
-                  transform: "scale(1.2)",
-                }}
-              />
-            </Box>
-          </Tooltip>
+          <TechIcon label="HTML5" icon={SiHtml5} />
+          <TechIcon label="CSS3" icon={SiCss3} />
+          <TechIcon label="JavaScript" icon={SiJavascript} />
+          <TechIcon label="TypeScript" icon={SiTypescript} />
+          <TechIcon label="ReactJS" icon={SiReact} />
+          <TechIcon label="NextJS" icon={SiNextdotjs} />
+          <TechIcon label="Chakra UI" icon={SiChakraui} />
+          <TechIcon label="Sass" icon={SiSass} />
+          <TechIcon label="styled-components" icon={SiStyledcomponents} />
+          <TechIcon label="Git" icon={SiGit} />
+          <TechIcon label="GitHub" icon={SiGithub} />
         </SimpleGrid>
       </Flex>
 
