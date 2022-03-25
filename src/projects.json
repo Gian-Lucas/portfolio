@@ -31,6 +31,12 @@
       "info": "UnFollowers é uma aplicação que mostra quais usuários não seguem você de volta no GitHub."
     },
     {
+      "url": "https://raw.githubusercontent.com/Gian-Lucas/portfolio/master/src/images/worldtrip.png",
+      "title": "Worldtrip",
+      "githubUrl": "https://github.com/Gian-Lucas/desafio01-interface-com-chakra-ui",
+      "info": "Mostra diversas opções de lugares em todos os continenes para quem quer fazer aquela viagem."
+    },
+    {
       "url": "https://raw.githubusercontent.com/Gian-Lucas/portfolio/master/src/images/todo-list.png",
       "title": "ToDo List",
       "githubUrl": "https://github.com/Gian-Lucas/desafio-01-todo-list",
