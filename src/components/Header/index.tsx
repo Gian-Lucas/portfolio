@@ -52,7 +52,7 @@ export function Header() {
                 <MenuLink href="#home" title="Home" mr="0" />
                 <MenuLink href="#tech" title="Tecnologias" />
                 <MenuLink href="#projects" title="Projetos" />
-                <MenuLink href="#contact" title="Contato" />
+                {/* <MenuLink href="#contact" title="Contato" /> */}
                 <ToggleTheme />
               </VStack>
             </DrawerBody>

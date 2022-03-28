@@ -18,7 +18,7 @@ export function Footer() {
       bg={colorMode === "light" ? "gray.200" : "gray.700"}
       mt="10"
       py="10"
-      id="contact"
+      id="footer"
     >
       <HStack spacing="8">
         <Link href="https://github.com/gian-lucas" isExternal>
