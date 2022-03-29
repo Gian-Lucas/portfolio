@@ -1,13 +1,7 @@
-import {
-  VStack,
-  Text,
-  Icon,
-  Link,
-  HStack,
-  useColorMode,
-} from "@chakra-ui/react";
+import { VStack, Text, Icon, HStack, useColorMode } from "@chakra-ui/react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { MdMail } from "react-icons/md";
+import { Link } from "./Link";
 
 export function Footer() {
   const { colorMode } = useColorMode();
@@ -19,46 +13,13 @@ export function Footer() {
       id="footer"
     >
       <HStack spacing="8">
-        <Link href="https://github.com/gian-lucas" isExternal>
-          <Icon
-            boxSize="10"
-            as={AiFillGithub}
-            transition="0.5s"
-            _hover={{
-              transform: "scale(1.4) rotate(360deg)",
-            }}
-          />
-        </Link>
-        <Link href="https://linkedin.com/in/gian-lucas-66299618b" isExternal>
-          <Icon
-            transition="0.5s"
-            _hover={{
-              transform: "scale(1.4) rotate(360deg)",
-            }}
-            boxSize="10"
-            as={AiFillLinkedin}
-          />
-        </Link>
-        <Link href="mailto:lgian584@gmail.com" isExternal>
-          <Icon
-            transition="0.5s"
-            _hover={{
-              transform: "scale(1.4) rotate(360deg)",
-            }}
-            boxSize="10"
-            as={MdMail}
-          />
-        </Link>
-        <Link href="https://instagram.com/gian_lcss" isExternal>
-          <Icon
-            transition="0.5s"
-            _hover={{
-              transform: "scale(1.4) rotate(360deg)",
-            }}
-            boxSize="10"
-            as={AiFillInstagram}
-          />
-        </Link>
+        <Link href="https://github.com/gian-lucas" icon={AiFillGithub} />
+        <Link
+          href="https://linkedin.com/in/gian-lucas-66299618b"
+          icon={AiFillLinkedin}
+        />
+        <Link href="mailto:lgian584@gmail.com" icon={MdMail} />
+        <Link href="https://instagram.com/gian_lcss" icon={AiFillInstagram} />
       </HStack>
 
       <Text>Gian Lucas ©2022. Todos os direitos reservados</Text>

@@ -1,15 +1,10 @@
 import {
-  Box,
   Button,
   Flex,
   Heading,
-  Icon,
   Image,
   Link,
-  SimpleGrid,
   Text,
-  Tooltip,
-  useDisclosure,
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
