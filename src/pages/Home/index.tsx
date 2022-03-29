@@ -10,6 +10,8 @@ import {
   Text,
   Tooltip,
   useDisclosure,
+  Wrap,
+  WrapItem,
 } from "@chakra-ui/react";
 import {
   SiChakraui,
@@ -102,19 +104,45 @@ export function Home() {
         <Heading textAlign={["center", "center", "start"]} mb="14">
           Tecnologias
         </Heading>
-        <SimpleGrid mx="auto" columns={[2, 3, 4, 5]} spacingX={8} spacingY={12}>
-          <TechIcon label="HTML5" icon={SiHtml5} />
-          <TechIcon label="CSS3" icon={SiCss3} />
-          <TechIcon label="JavaScript" icon={SiJavascript} />
-          <TechIcon label="TypeScript" icon={SiTypescript} />
-          <TechIcon label="ReactJS" icon={SiReact} />
-          <TechIcon label="NextJS" icon={SiNextdotjs} />
-          <TechIcon label="Chakra UI" icon={SiChakraui} />
-          <TechIcon label="Sass" icon={SiSass} />
-          <TechIcon label="styled-components" icon={SiStyledcomponents} />
-          <TechIcon label="Git" icon={SiGit} />
-          <TechIcon label="GitHub" icon={SiGithub} />
-        </SimpleGrid>
+
+        <Wrap
+          justify={["center", "center", "flex-start"]}
+          spacing={["12", "20"]}
+        >
+          <WrapItem>
+            <TechIcon label="HTML5" icon={SiHtml5} />
+          </WrapItem>
+          <WrapItem>
+            <TechIcon label="CSS3" icon={SiCss3} />
+          </WrapItem>
+          <WrapItem>
+            <TechIcon label="JavaScript" icon={SiJavascript} />
+          </WrapItem>
+          <WrapItem>
+            <TechIcon label="TypeScript" icon={SiTypescript} />
+          </WrapItem>
+          <WrapItem>
+            <TechIcon label="ReactJS" icon={SiReact} />
+          </WrapItem>
+          <WrapItem>
+            <TechIcon label="NextJS" icon={SiNextdotjs} />
+          </WrapItem>
+          <WrapItem>
+            <TechIcon label="Chakra UI" icon={SiChakraui} />
+          </WrapItem>
+          <WrapItem>
+            <TechIcon label="Sass" icon={SiSass} />
+          </WrapItem>
+          <WrapItem>
+            <TechIcon label="styled-components" icon={SiStyledcomponents} />
+          </WrapItem>
+          <WrapItem>
+            <TechIcon label="Git" icon={SiGit} />
+          </WrapItem>
+          <WrapItem>
+            <TechIcon label="GitHub" icon={SiGithub} />
+          </WrapItem>
+        </Wrap>
       </Flex>
 
       <ProjectCardList projects={projects} />

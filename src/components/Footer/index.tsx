@@ -4,9 +4,7 @@ import {
   Icon,
   Link,
   HStack,
-  StackDivider,
   useColorMode,
-  Stack,
 } from "@chakra-ui/react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { MdMail } from "react-icons/md";
