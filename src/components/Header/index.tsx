@@ -12,8 +12,8 @@ import {
 import { FiMenu } from "react-icons/fi";
 import { useMenuHeader } from "../../contexts/MenuHeaderContext";
 
-import { MenuLink } from "../MenuLink";
-import { ToggleTheme } from "../ToogleTheme";
+import { MenuLink } from "./MenuLink";
+import { ToggleTheme } from "./ToggleTheme";
 
 export function Header() {
   const { isOpen, onOpen, onClose } = useMenuHeader();

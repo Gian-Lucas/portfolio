@@ -1,6 +1,7 @@
-import { VStack, Text, Icon, HStack, useColorMode } from "@chakra-ui/react";
+import { VStack, Text, HStack, useColorMode } from "@chakra-ui/react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { MdMail } from "react-icons/md";
+
 import { Link } from "./Link";
 
 export function Footer() {

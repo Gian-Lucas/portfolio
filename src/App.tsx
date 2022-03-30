@@ -1,7 +1,14 @@
 import { ChakraProvider } from "@chakra-ui/react";
+
+import { About } from "./components/About";
+import { ButtonToTop } from "./components/ButtonToTop";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { Projects } from "./components/Projects";
+import { Techs } from "./components/Techs";
+
 import { MenuHeaderProvider } from "./contexts/MenuHeaderContext";
-import { Home } from "./pages/Home";
+
 import { theme } from "./styles/theme";
 
 function App() {
@@ -9,7 +16,11 @@ function App() {
     <ChakraProvider theme={theme}>
       <MenuHeaderProvider>
         <Header />
-        <Home />
+        <About />
+        <Techs />
+        <Projects />
+        <Footer />
+        <ButtonToTop />
       </MenuHeaderProvider>
     </ChakraProvider>
   );

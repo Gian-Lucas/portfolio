@@ -12,7 +12,7 @@ import {
   SiGit,
   SiGithub,
 } from "react-icons/si";
-import { TechIcon } from "../TechIcon";
+import { TechIcon } from "./TechIcon";
 
 export function Techs() {
   return (
