@@ -1,9 +1,10 @@
 import { Flex, Heading, Link, Button, Text, Image } from "@chakra-ui/react";
+import Typist from "react-typist";
 
 export function About() {
   return (
     <Flex
-      id="home"
+      id="about"
       maxWidth="1080px"
       justifyContent="space-between"
       flexWrap={["wrap-reverse", "wrap-reverse", "nowrap"]}
@@ -13,7 +14,14 @@ export function About() {
     >
       <Flex flexDir="column">
         <Heading size="2xl" textAlign={["center", "center", "start"]}>
-          Olá, me chamo Gian! Desenvolvedor Front-End Web
+          <Typist
+            cursor={{
+              hideWhenDone: true,
+              hideWhenDoneDelay: 500,
+            }}
+          >
+            Olá, me chamo Gian! Desenvolvedor Front-End Web
+          </Typist>
         </Heading>
         <Text
           fontSize={["md", "lg", "lg", "xl"]}

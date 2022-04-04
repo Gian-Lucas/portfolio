@@ -31,11 +31,7 @@ export function Header() {
         alignItems="center"
         p="2"
       >
-        <IconButton
-          aria-label="Search database"
-          icon={<FiMenu />}
-          onClick={onOpen}
-        />
+        <IconButton aria-label="Menu Icon" icon={<FiMenu />} onClick={onOpen} />
 
         <Drawer
           isOpen={isOpen}
@@ -49,10 +45,9 @@ export function Header() {
 
             <DrawerBody>
               <VStack spacing="4" mt="14">
-                <MenuLink href="#home" title="Home" mr="0" />
+                <MenuLink href="#about" title="Home" mr="0" />
                 <MenuLink href="#tech" title="Tecnologias" />
                 <MenuLink href="#projects" title="Projetos" />
-                {/* <MenuLink href="#contact" title="Contato" /> */}
                 <ToggleTheme />
               </VStack>
             </DrawerBody>
@@ -71,10 +66,9 @@ export function Header() {
       alignItems="center"
       p="2"
     >
-      <MenuLink href="#home" title="Sobre mim" />
+      <MenuLink href="#about" title="Sobre mim" />
       <MenuLink href="#tech" title="Tecnologias" />
       <MenuLink href="#projects" title="Projetos" />
-      {/* <MenuLink href="#contact" title="Contato" /> */}
 
       <ToggleTheme />
     </Flex>
