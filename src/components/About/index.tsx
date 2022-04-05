@@ -17,7 +17,7 @@ export function About() {
           <Typist
             cursor={{
               hideWhenDone: true,
-              hideWhenDoneDelay: 500,
+              hideWhenDoneDelay: 100,
             }}
           >
             Olá, me chamo Gian! Desenvolvedor Front-End Web

@@ -13,7 +13,11 @@ export function Projects() {
       px={["30", "50", "50"]}
       maxWidth="1080px"
     >
-      <Heading mb="14" textAlign={["center", "center", "start"]}>
+      <Heading
+        mb="14"
+        textAlign={["center", "center", "start"]}
+        data-aos="fade-up"
+      >
         Meus projetos
       </Heading>
 
@@ -28,6 +32,7 @@ export function Projects() {
         mt="10"
       >
         <Button
+          data-aos="flip-up"
           bg="blue.400"
           color="gray.50"
           _hover={{

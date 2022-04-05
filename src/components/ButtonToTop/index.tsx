@@ -13,7 +13,13 @@ export function ButtonToTop() {
   }, []);
 
   return scrollValue > 100 ? (
-    <Link href="#header" position="fixed" bottom="2" right="2">
+    <Link
+      href="#header"
+      position="fixed"
+      bottom="2"
+      right="2"
+      data-aos="flip-left"
+    >
       <IconButton
         opacity="0.8"
         borderRadius="xl"

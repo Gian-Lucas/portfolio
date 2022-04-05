@@ -23,7 +23,11 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
   const { url, title, githubUrl, info } = project;
   return (
-    <Flex flexDir={["column", "column", "row"]}>
+    <Flex
+      flexDir={["column", "column", "row"]}
+      data-aos="fade-right"
+      data-aos-duration="600"
+    >
       <Box mr={["0", "0", "5"]} mb={["2", "4", "0"]}>
         <Image
           maxWidth={["auto", "auto", "500"]}

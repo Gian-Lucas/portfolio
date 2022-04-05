@@ -11,7 +11,15 @@ import { MenuHeaderProvider } from "./contexts/MenuHeaderContext";
 
 import { theme } from "./styles/theme";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <ChakraProvider theme={theme}>
       <MenuHeaderProvider>
