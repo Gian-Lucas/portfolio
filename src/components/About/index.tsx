@@ -1,6 +1,8 @@
 import { Flex, Heading, Link, Button, Text, Image } from "@chakra-ui/react";
 import Typist from "react-typist";
 
+import "../../styles/typist.css";
+
 export function About() {
   return (
     <Flex
@@ -17,10 +19,13 @@ export function About() {
           <Typist
             cursor={{
               hideWhenDone: true,
-              hideWhenDoneDelay: 100,
+              hideWhenDoneDelay: 5000,
+              blink: true,
             }}
           >
-            Olá, me chamo Gian! Desenvolvedor Front-End Web
+            Olá, seja bem-vindo ao meu portfólio!
+            <Typist.Backspace count={37} delay={1500} />
+            Meu nome é Gian, sou um desenvolvedor Front-End Web.
           </Typist>
         </Heading>
         <Text
@@ -28,11 +33,11 @@ export function About() {
           mt={["3", "6", "10"]}
           textAlign={["center", "center", "start"]}
         >
-          Opa! Tudo bem? Meu nome é Gian Lucas, tenho 17 anos e sou um
-          Desenvolvedor Front-Ent Web. Atualmente estou focado em estudar a
-          stack ReactJS + NextJS + Chakra UI + styled-components. Fiz o curso
-          técnico em informática integrado ao ensino médio no IFPB e irei
-          ingressar em Ciência da Computação na UEPB.
+          Opa! Tudo bem? me chamo Gian Lucas, tenho 17 anos e sou apaixonado por
+          desenvolvimento web. Atualmente estou focado em estudar a stack
+          ReactJS + NextJS + Chakra UI + styled-components. Fiz o curso técnico
+          em informática integrado ao ensino médio no IFPB e agora estou
+          cursando Ciência da Computação na UEPB.
         </Text>
 
         <Link

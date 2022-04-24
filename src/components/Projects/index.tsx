@@ -25,6 +25,7 @@ export function Projects() {
 
       <Link
         _hover={{ textDecoration: "none" }}
+        data-aos="flip-up"
         isExternal
         href="https://github.com/Gian-Lucas?tab=repositories"
         w="fit-content"
@@ -32,7 +33,6 @@ export function Projects() {
         mt="10"
       >
         <Button
-          data-aos="flip-up"
           bg="blue.400"
           color="gray.50"
           _hover={{

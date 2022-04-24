@@ -12,6 +12,7 @@ export function Footer() {
       mt="10"
       py="10"
       id="footer"
+      data-aos="fade-right"
     >
       <HStack spacing="8">
         <Link href="https://github.com/gian-lucas" icon={AiFillGithub} />

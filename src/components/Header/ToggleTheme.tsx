@@ -1,5 +1,4 @@
 import { Button, Icon, useColorMode } from "@chakra-ui/react";
-
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 export function ToggleTheme() {
