@@ -7,7 +7,9 @@ import {
   Stack,
   Tag,
   Text,
+  useDisclosure,
 } from "@chakra-ui/react";
+import { ModalImage } from "../Modal";
 
 interface Project {
   url: string;
@@ -22,6 +24,8 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const { url, title, githubUrl, info } = project;
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <Flex
       flexDir={["column", "column", "row"]}
@@ -30,11 +34,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
     >
       <Box mr={["0", "0", "5"]} mb={["2", "4", "0"]}>
         <Image
+          onClick={onOpen}
           maxWidth={["auto", "auto", "500"]}
           borderRadius="base"
           src={url}
           alt={title}
         />
+
+        <ModalImage url={url} title={title} isOpen={isOpen} onClose={onClose} />
       </Box>
       <Stack spacing={["3", "4", "5"]}>
         <Heading>{title}</Heading>
