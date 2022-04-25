@@ -18,7 +18,13 @@ export function ModalImage({ isOpen, onClose, title, url }: ModalProps) {
   const { colorMode } = useColorMode();
   return (
     <>
-      <Modal isOpen={isOpen} onClose={onClose} autoFocus={false} size="5xl">
+      <Modal
+        isOpen={isOpen}
+        onClose={onClose}
+        autoFocus={false}
+        size="5xl"
+        isCentered
+      >
         <ModalOverlay />
         <ModalContent>
           <ModalCloseButton
