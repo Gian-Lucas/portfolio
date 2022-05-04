@@ -7,10 +7,10 @@
       "info": "A Pokedex armazena as informações de todos os Pokémon que existem no mundo."
     },
     {
-      "url": "https://raw.githubusercontent.com/Gian-Lucas/portfolio/master/src/images/spacetraveling.png",
-      "title": "Spacetraveling",
-      "githubUrl": "https://github.com/Gian-Lucas/desafio1-chapterIII-reactjs-criando-um-projeto-do-zero",
-      "info": "Um blog com conteúdo focado em tecnologia e desenvolvimento."
+      "url": "https://raw.githubusercontent.com/Gian-Lucas/portfolio/master/src/images/glgeek.png",
+      "title": "GLgeek",
+      "githubUrl": "https://github.com/Gian-Lucas/glgeek",
+      "info": "Um blog focado em conteúdo geek (cinema, séries, animes, jogos, HQs, tecnologia, etc.)"
     },
     {
       "url": "https://raw.githubusercontent.com/Gian-Lucas/portfolio/master/src/images/dtmoney.png",
