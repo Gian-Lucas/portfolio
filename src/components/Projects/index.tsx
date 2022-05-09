@@ -1,9 +1,35 @@
-import { Flex, Heading, Link, Button } from "@chakra-ui/react";
+import { Flex, Heading, Link, Button, Spinner } from "@chakra-ui/react";
 import { ProjectCardList } from "./ProjectCardList";
 
-import { projects } from "../../projects.json";
+import { useAllPrismicDocumentsByType } from "@prismicio/react";
+import { useEffect, useState } from "react";
+
+interface Project {
+  url: string;
+  title: string;
+  githubUrl: string;
+  info: string;
+}
 
 export function Projects() {
+  const [results, { state }] = useAllPrismicDocumentsByType("project");
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    if (results !== undefined) {
+      const projectsFormatted = results.map((project) => {
+        const data = project.data;
+        return {
+          title: data.title[0].text,
+          info: data.description[0].text,
+          url: data.image.url,
+          githubUrl: data.url.url,
+        };
+      });
+      setProjects(projectsFormatted);
+    }
+  }, [results]);
+
   return (
     <Flex
       flexDir="column"
@@ -21,7 +47,11 @@ export function Projects() {
         Meus projetos
       </Heading>
 
-      <ProjectCardList projects={projects} />
+      {state === "loading" ? (
+        <Spinner mx="auto" />
+      ) : (
+        <ProjectCardList projects={projects} />
+      )}
 
       <Link
         _hover={{ textDecoration: "none" }}
