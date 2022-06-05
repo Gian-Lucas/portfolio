@@ -21,7 +21,7 @@ export function Footer() {
           icon={AiFillLinkedin}
         />
         <Link href="mailto:lgian584@gmail.com" icon={MdMail} />
-        <Link href="https://instagram.com/gian_lcss" icon={AiFillInstagram} />
+        <Link href="https://instagram.com/gian.tsx" icon={AiFillInstagram} />
       </HStack>
 
       <Text>Gian Lucas ©2022. Todos os direitos reservados</Text>
