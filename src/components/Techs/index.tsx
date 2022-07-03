@@ -7,7 +7,7 @@ import {
   SiReact,
   SiNextdotjs,
   SiChakraui,
-  SiSass,
+  SiTailwindcss,
   SiStyledcomponents,
   SiGit,
   SiGithub,
@@ -55,7 +55,7 @@ export function Techs() {
           <TechIcon label="Chakra UI" icon={SiChakraui} />
         </WrapItem>
         <WrapItem data-aos="flip-left" data-aos-duration="800">
-          <TechIcon label="Sass" icon={SiSass} />
+          <TechIcon label="TailwindCSS" icon={SiTailwindcss} />
         </WrapItem>
         <WrapItem data-aos="flip-left" data-aos-duration="800">
           <TechIcon label="styled-components" icon={SiStyledcomponents} />
