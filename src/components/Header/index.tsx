@@ -48,6 +48,7 @@ export function Header() {
                 <MenuLink href="#about" title="Home" mr="0" />
                 <MenuLink href="#tech" title="Tecnologias" />
                 <MenuLink href="#projects" title="Projetos" />
+                <MenuLink href="#contact" title="Contato" />
                 <ToggleTheme />
               </VStack>
             </DrawerBody>
@@ -69,6 +70,7 @@ export function Header() {
       <MenuLink href="#about" title="Sobre mim" />
       <MenuLink href="#tech" title="Tecnologias" />
       <MenuLink href="#projects" title="Projetos" />
+      <MenuLink href="#contact" title="Contato" />
 
       <ToggleTheme />
     </Flex>
