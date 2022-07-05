@@ -35,9 +35,10 @@ export function About() {
         >
           Opa! Tudo bem? me chamo Gian Lucas, tenho 17 anos e sou apaixonado por
           desenvolvimento web. Atualmente estou focado em estudar a stack
-          ReactJS + NextJS + Chakra UI + styled-components. Fiz o curso técnico
-          em informática integrado ao ensino médio no IFPB e agora estou
-          cursando Ciência da Computação na UEPB.
+          ReactJS + NextJS e algumas libs como o TailwindCSS, Chakra UI e
+          styled-components. Fiz o curso técnico em informática integrado ao
+          ensino médio no IFPB e agora estou cursando Ciência da Computação na
+          UEPB.
         </Text>
 
         <Link
