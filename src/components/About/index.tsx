@@ -31,7 +31,7 @@ export function About() {
         <Text
           fontSize={["md", "lg", "lg", "xl"]}
           mt={["3", "6", "10"]}
-          textAlign={["center", "center", "start"]}
+          textAlign="justify"
         >
           Opa! Tudo bem? me chamo Gian Lucas, tenho 17 anos e sou apaixonado por
           desenvolvimento web. Atualmente estou focado em estudar a stack
